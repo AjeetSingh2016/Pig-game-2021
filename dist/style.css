@@ -1,0 +1,149 @@
+body{
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left top, #f7971e, #f06841, #d5425a, #a92e6b, #712a6e);
+        
+}
+header{
+    justify-content: right;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+}
+button{
+    margin-right: 1.5rem;
+    text-align: center;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 12px;
+    border-style: hidden;
+    background-color: #920a8471;
+    color: white;
+
+}
+.main{
+    z-index: 5;
+    display: flex;
+    width: 100%;
+    height: 83vh;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    border-radius: 2% 0% 0% 2%;
+    width: 30rem;
+    height: 37rem;
+    
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:monospace;
+    background-color: rgba(255, 255, 255, 0.363);
+}
+.right{
+    border-radius: 0% 2% 2% 0%;
+    width: 30rem;
+    height: 37rem;
+    background-color: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:monospace;
+    background-color: rgba(151, 111, 111, 0.699);
+
+}
+.options{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+.main1{
+    display: flex;
+    z-index: 5;
+}
+.main2{
+    position: absolute;
+    width: 60rem;
+    height: 37rem;
+    display: flex;
+    background-color: none;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.otpion1{
+    height: 12.5rem;
+    display: flex;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10rem;
+    align-items: center;
+
+    /* background-color: crimson; */
+}
+.otpion2{
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    height: 8.5rem;
+    width: 10rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.new-game, .dice, .roll-dice, .hold{
+    margin-left: 25px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: rgb(70, 70, 70);
+    font-size: 1.5rem;
+}
+.new-game{
+    height: 3.4rem;
+    width: 11.5rem;
+}
+.roll-dice{
+    height: 3.4rem;
+    width: 10.5rem;
+}
+.hold{
+    height: 3.4rem;
+    width: 7.5rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+.livescore-one, .livescore-two{
+    font-size: 3.5rem;
+}
+.scorecard{
+    width: 10rem;
+    height: 6rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem; 
+    margin-top: 30%;
+    background-color: #BC3763;
+    border-radius: 8%;
+
+}
+.image{
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+.currentPlayer{
+
+}
