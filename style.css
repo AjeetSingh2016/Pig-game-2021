@@ -34,12 +34,13 @@ button{
     border-radius: 2% 0% 0% 2%;
     width: 30rem;
     height: 37rem;
-    background-color: rgba(255, 255, 255, 0.699);
+    
     backdrop-filter: blur(3px);
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family:monospace;
+    background-color: rgba(255, 255, 255, 0.363);
 }
 .right{
     border-radius: 0% 2% 2% 0%;
@@ -51,6 +52,8 @@ button{
     flex-direction: column;
     align-items: center;
     font-family:monospace;
+    background-color: rgba(151, 111, 111, 0.699);
+
 }
 .options{
     position: absolute;
@@ -119,7 +122,7 @@ button{
 h2{
     font-size: 3.5rem;
 }
-.livescore{
+.livescore-one, .livescore-two{
     font-size: 3.5rem;
 }
 .scorecard{
@@ -140,4 +143,7 @@ h2{
     width: 80px;
     height: 80px;
     background-size: contain;
+}
+.currentPlayer{
+
 }

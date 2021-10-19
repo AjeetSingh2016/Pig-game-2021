@@ -1,12 +1,18 @@
 
 let howToPlay = document.querySelector('.htpbutton');
 const rollDice = document.querySelector('.roll-dice');
-let mainscore = document.querySelector('.livescore');
+let mainscoreOne = document.querySelector('.livescore-one');
+let mainscoreTwo = document.querySelector('.livescore-two');
 const image = document.querySelector('.image');
-let playerOneCurrent = document.querySelector('.card-score');
+let playerOneCurrent = document.querySelector('.card-score-one');
+let playerTwoCurrent = document.querySelector('.card-score-two');
 let scoreone = 0;
 const hold = document.querySelector('.hold');
 
+const left = document.querySelector('.left');
+const right = document.querySelector('.right');
+
+let change = 1;
 howToPlay.addEventListener('click',function(){
     alert("When a player reaches a total of 100 or more points, the game ends and that player is the winner.");
 })
@@ -33,21 +39,38 @@ rollDice.addEventListener('click',function(){
     else if(num==6){
         image.style.backgroundImage = "url(img/dice6.png)";
     }
-    if(num==1){
-        playerOneCurrent.textContent = 0;
-        scoreone = 0;
+    if(change%2==0){
+        if(num==1){
+            playerTwoCurrent.textContent = 0;
+            scoreone = 0;
+            change++;
+        }
+        else{
+            scoreone += num;
+            playerTwoCurrent.textContent = scoreone;
+
+        }
+
     }
     else{
-        scoreone += num;
-        playerOneCurrent.textContent = scoreone;
+        if(num==1){
+            playerOneCurrent.textContent = 0;
+            scoreone = 0;
+            change++;
+
+
+        }
+        else{
+            scoreone += num;
+            playerOneCurrent.textContent = scoreone;
+        }
 
     }
 })
-
 hold.addEventListener('click',function(){
-    mainscore.textContent = scoreone;
-    playerOneCurrent.textContent = 0;
+    
 
 })
+
 
 
